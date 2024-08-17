@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# React Tabs Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React project demonstrating a tabbed interface where each tab displays different content. The project is set up using Vite with TypeScript and managed using `pnpm`.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you start, make sure you have `pnpm` and `node.js` installed on your machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+    ```bash
+    git clone https://github.com/deeqakkk/react-tabs.git
+    cd react-tabs
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies using `pnpm`:
 
-### `npm run build`
+    ```bash
+    pnpm install
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the project locally, use the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+pnpm dev
+```
 
-### `npm run eject`
+This will start the development server, and you can view the application by navigating to `http://localhost:5173` in your web browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project structure is as follows:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```plaintext
+├── public
+│   └── vite.svg               # Vite logo used in the project
+├── src
+│   ├── assets
+│   │   └── react.svg          # React logo used in the project
+│   ├── App.css                # CSS file for styling the app
+│   ├── App.tsx                # Main React component for the application
+│   ├── main.tsx               # Entry point of the React application
+│   ├── index.html             # HTML template for the application
+│   └── vite-env.d.ts          # TypeScript environment definition
+├── tsconfig.json              # TypeScript configuration
+├── vite.config.ts             # Vite configuration
+├── package.json               # Package configuration file
+├── pnpm-lock.yaml             # Lockfile for dependencies managed by pnpm
+└── README.md                  # Project documentation
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- **Tabbed Interface**: The application features a simple tabbed interface where clicking on each tab updates the content displayed.
+- **Dynamic Content**: The content for each tab is dynamically rendered based on the selected tab.
+- **TypeScript Support**: The project is built using TypeScript, providing type safety and enhanced developer experience.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Tab Descriptions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The tabs display different content based on the section selected:
 
-### Code Splitting
+1. **Why React**: Discusses the reasons to choose React for building web applications.
+2. **Core Features**: Highlights the main features of React that make it a powerful tool.
+3. **Related Resources**: Provides resources related to React, such as libraries and documentation.
+4. **React vs Js**: Compares React with vanilla JavaScript.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Tech Stack
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: A JavaScript library for building user interfaces.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **TypeScript**: A statically typed superset of JavaScript.
+- **pnpm**: A fast, disk space-efficient package manager.

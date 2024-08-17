@@ -1,9 +1,9 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { useState } from 'react'
 import { headerDescription, tabHeading } from './constants'
 import { HeadingLabel } from './defs'
+import { Header } from './Header'
+import { Footer } from './Footer'
 
 
 function App() {
@@ -16,15 +16,8 @@ function App() {
   }
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
+    <div className='main-container'>
+      <Header/>
       <h1>React Tabs</h1>
       <div className="card">
         {
@@ -37,11 +30,10 @@ function App() {
         }
       </div>
       <ul className="tabs-description">
-        {
-          currentTabDescription?.map((item, index) => <li key={index}>{item}</li>)
-        }
+        {currentTabDescription?.map((item, index) => <li key={index}>{item}</li>)}
       </ul>
-    </>
+      <Footer/>
+    </div>
   )
 }
 
